@@ -21,8 +21,9 @@
   --white-bg-cl: #ffffff;
 
   /* others */
+  --border-cl: #eeeeee;
 }
-.body {
+body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
   background-color: var(--white-bg-cl);
@@ -102,10 +103,6 @@ p {
 }
 
 /* .header-item, */
-.header-logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
-}
 
 .header-link,
 .header-mail,
@@ -150,10 +147,12 @@ p {
 /* hero */
 .hero {
   text-align: center;
+  padding: 200px 0;
 }
 
 .hero-title {
-  padding-top: 200px;
+  width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -167,7 +166,6 @@ p {
   /* max-width: 240px;
   min-width: 200px;
   min-height: 50px; */
-  margin-bottom: 200px;
   padding: 10px 32px;
   color: var(--btn-txt-cl);
   font-weight: 700;
@@ -190,8 +188,9 @@ p {
 }
 
 /* <!-- Особенности --> */
-.features-container {
+.section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -220,16 +219,18 @@ p {
   text-transform: uppercase;
 }
 .features-descr {
-  padding-bottom: 94px;
   line-height: calc(24 / 14);
   color: var(--main-txt-item);
 }
 
 /* <!-- Чем мы занимаемся --> */
+/* .work {
+  padding: 0;
+} */
 
-.work-container {
+/* .work-container {
   padding-bottom: 94px;
-}
+} */
 
 .work-title,
 .team-title {
@@ -246,10 +247,9 @@ p {
 
 /* <!-- Наша команда --> */
 
-.team-container {
-  padding-top: 94px;
+/* .team-container {
   padding-bottom: 94px;
-}
+} */
 .team {
   background: var(--team-bg-cl);
 }
@@ -263,14 +263,15 @@ p {
 }
 
 .team-wrapper {
+  text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .team-item-title {
   margin-bottom: 10px;
-  padding-left: 5px;
+  /* padding-left: 5px;
   padding-right: 5px;
-  text-align: center;
+  text-align: center; */
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -284,10 +285,10 @@ p {
 }
 
 /* Портфолио */
-.portfolio {
+/* .portfolio {
   margin-top: 94px;
   margin-bottom: 94px;
-}
+} */
 
 .portfolio-list-btn {
   margin-bottom: 50px;
@@ -336,8 +337,7 @@ p {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
-  background: var(--white-bg-cl);
-  border: 1px solid #eeeeee;
+  border: 1px var(--border-cl);
   border-top: none;
 }
 .gallery-item-title {
@@ -355,16 +355,22 @@ p {
 }
 
 /* footer */
-.footer-container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-list {
+/* .footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+} */
+
+.address {
   margin-top: 20px;
-  font-weight: 400;
-  line-height: calc(24 / 14);
   font-style: normal;
+}
+.footer-list {
+  line-height: calc(24 / 14);
 }
 
 .footer-item-map {
