@@ -210,6 +210,10 @@ p {
   gap: 30px;
 }
 
+.features-item {
+  width: 270px;
+}
+
 .features-title {
   margin-bottom: 10px;
   flex-basis: calc((100%-90px) / 4);
@@ -224,9 +228,9 @@ p {
 }
 
 /* <!-- Чем мы занимаемся --> */
-/* .work {
+.work {
   padding: 0;
-} */
+}
 
 /* .work-container {
   padding-bottom: 94px;
@@ -337,7 +341,7 @@ p {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
-  border: 1px var(--border-cl);
+  border: 1px solid var(--border-cl);
   border-top: none;
 }
 .gallery-item-title {
